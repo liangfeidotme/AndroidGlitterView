@@ -1,5 +1,7 @@
 package com.liangfeizc.glitterview;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,8 +12,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(new KiraKiraView(this, null));
-        //setContentView(R.layout.activity_main);
+        setContentView(new GlitterView(this));
     }
 
     @Override
@@ -29,7 +30,10 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_about) {
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("https://github.com/lyndonchin"));
+            startActivity(intent);
             return true;
         }
 
