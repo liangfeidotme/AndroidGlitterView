@@ -2,26 +2,54 @@
 
 A view to show bling bling stars when you touch it.
 
+## Demo
+
+![](arg/sample.gif)
+
+## Dependency
+
+```groovy
+compile('com.liangfeizc:glitterview:1.0.0@aar')
+```
+
+## Attributes
+
+|name|format|
+|---|---|
+|starColor|color|
+|maxStarCount|integer|
+
+## Usage
+
+The assumed way to use `GlifferView` is put it above the content view. 
+
+For example if you want to draw bling bling stars on an ImageView like the demo above, you xml file would be like this.
+
+*Lay a `GlifferView` above an `ImageView`*:
+
+```xml
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:glitter="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:src="@drawable/your_image" />
+
+    <com.liangfeizc.glitterview.GlitterView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        glitter:starColor="#ED2727"
+        glitter:maxStarCount="250" />
+
+</FrameLayout>
+```
+
 ## License
 
     The MIT License (MIT)
     
-    Copyright (c) 2015 liangfei
-    
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
-    
-    The above copyright notice and this permission notice shall be included in all
-    copies or substantial portions of the Software.
-    
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-    SOFTWARE.

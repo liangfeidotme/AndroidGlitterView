@@ -21,5 +21,6 @@ android {
 
 dependencies {
     compile 'com.android.support:appcompat-v7:22.+'
+    //compile "com.liangfeizc:glitterview:1.0.0@aar"
     compile project(':glitterview')
 }
