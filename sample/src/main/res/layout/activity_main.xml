@@ -1,14 +1,13 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:glitter="http://schemas.android.com/apk/res-auto">
     <ImageView
-        android:scaleType="centerInside"
         android:src="@drawable/horikita_maki"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
+        android:layout_height="match_parent"
+        android:scaleType="centerInside" />
     <com.liangfeizc.glitterview.GlitterView
-        glitter:starColor="#ED2727"
-        glitter:maxStarCount="250"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        glitter:starColor="#ED2727"
+        glitter:maxStarCount="250" />
 </merge>

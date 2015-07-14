@@ -1,12 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-    </style>
 
     <declare-styleable name="GlitterView">
         <attr name="starColor" format="color" />
         <attr name="maxStarCount" format="integer" />
     </declare-styleable>
+
 </resources>
