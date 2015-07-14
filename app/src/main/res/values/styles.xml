@@ -5,4 +5,8 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <declare-styleable name="GlitterView">
+        <attr name="starColor" format="color" />
+        <attr name="maxStarCount" format="integer" />
+    </declare-styleable>
 </resources>
